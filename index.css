@@ -347,3 +347,6 @@ template {
 [hidden] {
   display: none;
 }
+#container{
+  background-color: blue;
+}
