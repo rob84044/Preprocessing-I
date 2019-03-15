@@ -347,60 +347,222 @@ template {
 [hidden] {
   display: none;
 }
-/* Variables */
 
-/* Flexbox variables */
-
-.flexbox{
-	display: flex-box;
-	align-items: center;
-	align-content: center;
-	}
-.flexbox-space-around{
-		justify-content: space-around;
+// My code begins here 
+html{
+  box-sizing: border-box;
+  font-size: 62.5%;
 }
-.flexbox-center{
-	justify-content: center;
-}
-.flexbox-space-between{
-	justify-content: space-between;
-}
-.flexbox-row{
-	flex-direction: space-around;
-}
-.flexbox-column{
-	flex-direction: column;
-	width: 100%;
-}
-.download-pdf{
-	margin: 0 auto;
-}
-.download-file{
-	background-color: tan;
-	border: 1px solid black;
-}
-a, a:hover, a:visited, a:active{
-	color:red;
-}
-.download-button{
-	background-color: black;
-	border-radius:500px;
-	height: 15%;
-	width: 10%;
-	padding: 0px;
-}
-
 #container{
-width:85%;
-margin: 0 auto;
-background-color: grey;
-max-height: 1375px;
+  font-size: 1.5rem;
+  width: 90%;
+  margin: 0 auto;
+  display: flex-box;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  background-color: white;
 }
-*{
-	width: 98%;
-	margin: 0 auto;
-	padding: 0;
-		#download-file-as-pdf{
-			.download-pdf;
-		}
-	};
+header{
+  padding: 0px;
+  margin: 0px;
+  border: 1px solid black;
+  background-color: darkseagreen;
+  text-align: center;
+  color: lightcoral;
+  font-weight: bolder;
+  -webkit-text-stroke: .5px black;
+  text-shadow:
+    3px 3px 0 #000,
+    -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    //Obtained from https://css-tricks.com/adding-stroke-to-web-text/ in the section "Combining"
+  h1 .download-file-as-pdf-text{
+    text-align: center;
+    background-color: white;
+  }
+  button{
+    border-radius: 100px;
+    background-color: lightcoral;
+    border: 1px double black;
+    margin-left: 5px;
+  } 
+  a, a:hover, a:visited, a:active {
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+nav{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  font-size: 3rem;
+  background-color: lightsalmon;
+  color: white;
+  border: 1px double black;
+    a, a:hover, a:visited, a:active{
+      text-decoration: none;
+      color: black;
+    }
+}
+// #aboutme{
+//   display: flex;
+//   flex-direction: row;
+//   flex-wrap: wrap;
+//   align-content: center;
+//   align-items: center;
+//   justify-content: space-around;
+// }
+#name-number-email, #socailmedia-top{
+  height: 150px;
+  width: 30%;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+   p{
+      padding: 0px;
+      margin: 0px;
+      vertical-align: middle;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// /* Variables */
+// @background-color: tan;
+// @button-color: gray;
+// @font-size: 62.5%;
+// @width: 300px;
+
+
+// /* Flexbox variables */
+// /*Mixins*/
+// .flexbox{
+// 	display: flex-box;
+// 	align-items: center;
+// 	align-content: center;
+// 	}
+// .flexbox-space-around{
+// 		justify-content: space-around;
+// }
+// .flexbox-center{
+// 	justify-content: center;
+// }
+// .flexbox-space-between{
+// 	justify-content: space-between;
+// }
+// .flexbox-row{
+// 	flex-direction: space-around;
+// }
+// .flexbox-column{
+// 	flex-direction: column;
+// 	width: 100%;
+// }
+// .centered{
+// 	margin: 0 auto;
+// }
+// .download-file{
+// 	background-color: tan;
+// }
+// a, a:hover, a:visited, a:active{
+// 	color:red;
+// }
+// .download-button{
+// 	background-color: black;
+// 	border-radius:500px;
+//   border-radius:500px;
+//   height: 100px;
+// 	width: 40px;
+// 	padding: 0px;
+// }
+// #container{
+//   max-height: 1375px;
+// width: 90%;
+// }
+
+// #container{
+// margin: 0 auto;
+// background-color: grey;
+// font-size: @font-size;
+//   section .container-child{
+//     .flex-box();
+//     .flexbox-row();
+//     .flexbox-center();
+//   }
+// }
+

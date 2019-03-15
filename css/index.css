@@ -303,60 +303,77 @@ template {
 [hidden] {
   display: none;
 }
-/* Variables */
-/* Flexbox variables */
-.flexbox {
-  display: flex-box;
-  align-items: center;
-  align-content: center;
-}
-.flexbox-space-around {
-  justify-content: space-around;
-}
-.flexbox-center {
-  justify-content: center;
-}
-.flexbox-space-between {
-  justify-content: space-between;
-}
-.flexbox-row {
-  flex-direction: space-around;
-}
-.flexbox-column {
-  flex-direction: column;
-  width: 100%;
-}
-.download-pdf {
-  margin: 0 auto;
-}
-.download-file {
-  background-color: tan;
-  border: 1px solid black;
-}
-a,
-a:hover,
-a:visited,
-a:active {
-  color: red;
-}
-.download-button {
-  background-color: black;
-  border-radius: 500px;
-  height: 15%;
-  width: 10%;
-  padding: 0px;
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
 }
 #container {
-  width: 85%;
+  font-size: 1.5rem;
+  width: 90%;
   margin: 0 auto;
-  background-color: grey;
-  max-height: 1375px;
+  display: flex-box;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  background-color: white;
 }
-* {
-  width: 98%;
-  margin: 0 auto;
-  padding: 0;
+header {
+  padding: 0px;
+  margin: 0px;
+  border: 1px solid black;
+  background-color: darkseagreen;
+  text-align: center;
+  color: lightcoral;
+  font-weight: bolder;
+  -webkit-text-stroke: 0.5px black;
+  text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
-* #download-file-as-pdf {
-  margin: 0 auto;
+header h1 .download-file-as-pdf-text {
+  text-align: center;
+  background-color: white;
+}
+header button {
+  border-radius: 100px;
+  background-color: lightcoral;
+  border: 1px double black;
+  margin-left: 5px;
+}
+header a,
+header a:hover,
+header a:visited,
+header a:active {
+  text-decoration: none;
+  cursor: pointer;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  font-size: 3rem;
+  background-color: lightsalmon;
+  color: white;
+  border: 1px double black;
+}
+nav a,
+nav a:hover,
+nav a:visited,
+nav a:active {
+  text-decoration: none;
+  color: black;
+}
+#name-number-email,
+#socailmedia-top {
+  height: 150px;
+  width: 30%;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+}
+#name-number-email p,
+#socailmedia-top p {
+  padding: 0px;
+  margin: 0px;
+  vertical-align: middle;
 }
