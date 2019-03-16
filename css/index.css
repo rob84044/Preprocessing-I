@@ -466,26 +466,27 @@ img {
   width: 100%;
   text-align: center;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   flex-direction: row;
   align-content: center;
-  align-items: center;
+  align-items: flex-start;
+  flex-wrap: no-wrap;
   padding: 0px;
   margin: 0px;
 }
 #who-i-am #imageholder {
-  width: 15%;
-}
-#who-i-am #imageholder img {
-  height: 70%;
-  width: 450px;
-  border: 1px solid blue;
+  width: 25%;
   padding: 0px;
   margin: 0px;
 }
+#who-i-am #imageholder img {
+  height: 100%;
+  width: 100%;
+  padding: 0px;
+}
 #who-i-am #title {
-  width: 30%;
-  font-size: 14rem;
+  width: 25%;
+  font-size: 900%;
   border: 1px solid yellow;
   padding: 0px;
   margin: 0px;
@@ -523,21 +524,50 @@ img {
 }
 #who-i-am #makeshift1 .placeholder h3 {
   border: 1px solid maroon;
-  font-size: 3rem;
+  font-size: 35px;
   width: 20rem;
   padding: 0px;
   margin: 0px;
 }
-#who-i-am #skills #skillsheader #skillstable table,
-#who-i-am #skills #skillsheader #skillstable th,
-#who-i-am #skills #skillsheader #skillstable td {
+#who-i-am #makeshift1 #skills {
+  width: 25%;
+}
+#who-i-am #imageholder,
+#who-i-am #title,
+#who-i-am #makeshift1,
+#who-i-am #skills {
+  padding: 100px 0px;
+}
+#skillstable table,
+#skillstable th,
+#skillstable td {
   border: 1px solid black;
   border-collapse: collapse;
 }
-#who-i-am #skills #skillsheader #skillstable th,
-#who-i-am #skills #skillsheader #skillstable td {
+#skillstable th,
+#skillstable td {
   padding: 15px;
 }
-#who-i-am #skills #skillsheader #skillstable th {
+#skillstable th {
   text-align: left;
+}
+#skillstable td:hover {
+  background-color: black;
+  color: lightsalmon;
+}
+#skillstable a,
+#skillstable a:hover,
+#skillstable a:visited,
+#skillstable a:active {
+  text-decoration: none;
+  color: black;
+}
+#skillstable .change td:hover {
+  color: black;
+  text-decoration: underline;
+  background-color: white;
+}
+#skillstable tr #rowspecial {
+  background-color: black;
+  color: lightsalmon;
 }
