@@ -317,7 +317,7 @@ html {
   justify-content: center;
   align-content: center;
   align-items: center;
-  background-color: white;
+  background-color: black;
 }
 header {
   padding: 0px;
@@ -363,17 +363,139 @@ nav a:active {
   text-decoration: none;
   color: black;
 }
-#name-number-email,
-#socailmedia-top {
-  height: 150px;
-  width: 30%;
-  border: 1px solid black;
+#aboutme {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+#contact-info {
+  height: 9rem;
+  width: 100%;
   display: flex;
   flex-direction: row;
-}
-#name-number-email p,
-#socailmedia-top p {
+  flex-wrap: wrap;
+  justify-content: sapce-betwen;
+  align-content: center;
+  align-items: center;
+  background-color: lightgray;
   padding: 0px;
   margin: 0px;
   vertical-align: middle;
+}
+p {
+  padding: 0px;
+  margin: 0px;
+  vertical-align: middle;
+  width: 10%;
+  text-align: center;
+}
+#number a,
+#number a:hover,
+#number a:visited,
+#number a:active {
+  color: black;
+}
+#email a,
+#email a:hover,
+#email a:visited,
+#email a:active {
+  color: brown;
+}
+#facebook-top a,
+#facebook-top a:hover,
+#facebook-top a:visited,
+#facebook-top a:active {
+  color: #3b5998;
+}
+#twitter-top a,
+#twitter-top a:hover,
+#twitter-top a:visited,
+#twitter-top a:active {
+  color: #00aced;
+}
+#github-top a,
+#github-top a:hover,
+#github-top a:visited,
+#github-top a:active {
+  color: #222222;
+}
+#facebook-messeneger-top a,
+#facebook-messeneger-top a:hover,
+#facebook-messeneger-top a:visited,
+#facebook-messeneger-top a:active {
+  color: #3b5998;
+}
+#youtube-top a,
+#youtube-top a:hover,
+#youtube-top a:visited,
+#youtube-top a:active {
+  color: #cc181e;
+}
+#instagram-top a,
+#instagram-top a:hover,
+#instagram-top a:visited,
+#instagram-top a:active {
+  color: #517fa4;
+}
+#fullname {
+  font-size: 3.9rem;
+}
+img {
+  padding-top: 7px;
+  width: 39%;
+  height: 100%;
+}
+#who-i-am {
+  background-color: white;
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+#who-i-am #makeshift1,
+#who-i-am #makeshift2 {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+  height: 30rem;
+}
+#who-i-am h1 {
+  font-size: 10rem;
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+}
+#who-i-am h3 {
+  font-size: 3rem;
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+}
+#who-i-am img {
+  width: 300px;
+  height: 100%;
+  border: 1px solid black;
+}
+#who-i-am p {
+  font-size: 2rem;
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  text-align: justify;
 }
