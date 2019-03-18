@@ -311,7 +311,7 @@ html {
   font-size: 1.5rem;
   width: 90%;
   margin: 0 auto;
-  display: flex-box;
+  display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
@@ -347,26 +347,39 @@ header a:active {
   text-decoration: none;
   cursor: pointer;
 }
+#toppdf {
+  margin-top: 50px;
+  padding-top: 20px;
+}
 nav {
   display: flex;
   justify-content: space-around;
   flex-direction: row;
+  align-content: center;
+  align-items: center;
   font-size: 3rem;
-  background-color: lightsalmon;
-  color: white;
-  border: 1px double black;
+  background-color: black;
+  border: 2px double white;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 50px;
 }
 nav a,
 nav a:hover,
 nav a:visited,
 nav a:active {
   text-decoration: none;
-  color: black;
+  color: lightgreen;
+}
+.topaboutme {
+  margin-top: 35px;
+  padding-top: 20px;
 }
 #aboutme {
   width: 100%;
-  margin: 0px;
-  padding: 0px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -375,7 +388,7 @@ nav a:active {
   align-items: center;
 }
 #contact-info {
-  height: 200px;
+  height: 100px;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -392,7 +405,7 @@ p {
   padding: 0px;
   margin: 0px;
   vertical-align: middle;
-  width: 10%;
+  width: 9%;
   text-align: center;
 }
 img {
@@ -434,6 +447,12 @@ img a:active {
 #github-top a:active {
   color: #222222;
 }
+#linkedin-top a,
+#linkedin-top a:hover,
+#linkedin-top a:visited,
+#linkedin-top a:active {
+  color: #007bb6;
+}
 #facebook-messeneger-top a,
 #facebook-messeneger-top a:hover,
 #facebook-messeneger-top a:visited,
@@ -473,6 +492,7 @@ img {
   flex-wrap: no-wrap;
   padding: 0px;
   margin: 0px;
+  border: 1px solid black;
 }
 #who-i-am #imageholder {
   width: 25%;
@@ -568,4 +588,310 @@ img {
 }
 .bottom-job-container-child {
   background-color: white;
+}
+#bottom-job-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  background-color: black;
+  width: 100%;
+  height: 400px;
+  padding: 0 auto;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.5rem;
+  border: 1px solid black;
+}
+#bottom-job-container #bottom-job-container-details {
+  width: 25%;
+  height: 100%;
+  padding: 0 auto;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  background-color: lightsalmon;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+}
+#bottom-job-container #bottom-job-container-description1 {
+  width: 25%;
+  height: 100%;
+  padding: 0 auto;
+  margin: 0 auto;
+  text-align: left;
+  background-color: lightsalmon;
+  color: black;
+}
+#bottom-job-container #bottom-job-container-description2 {
+  width: 25%;
+  height: 100%;
+  padding: 0 auto;
+  margin: 0 auto;
+  text-align: left;
+  background-color: lightsalmon;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+#bottom-job-container2 {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  background-color: black;
+  width: 100%;
+  height: 400px;
+  padding: 0 auto;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.5rem;
+  border: 1px solid black;
+}
+#bottom-job-container2 #bottom-job-container2-details {
+  width: 30%;
+  height: 100%;
+  padding: 0 auto;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  background-color: lightsalmon;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+}
+#bottom-job-container2 #bottom-job-container2-description1 {
+  width: 30%;
+  height: 100%;
+  padding: 0 auto;
+  margin: 0 auto;
+  text-align: left;
+  background-color: lightsalmon;
+  color: black;
+}
+#bottom-job-container2 #bottom-job-container2-description1 {
+  width: 30%;
+  height: 100%;
+  text-align: left;
+  background-color: lightsalmon;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+#bottom-job-container3 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  background-color: black;
+  width: 100%;
+  height: 400px;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 0px;
+  margin: 0px;
+}
+#bottom-job-container3 #bottom-job-container3-details {
+  width: 35%;
+  height: 100%;
+  font-size: 1.5rem;
+  background-color: lightsalmon;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
+#bottom-job-container3 #bottom-job-container3-description1 {
+  width: 35%;
+  height: 100%;
+  text-align: left;
+  background-color: lightsalmon;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
+#bottom-job-container4 {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  background-color: black;
+  width: 100%;
+  height: 400px;
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 0 auto;
+  padding: 0px;
+  margin: 0px;
+}
+#bottom-job-container4 #bottom-job-container4-details {
+  width: 40%;
+  height: 100%;
+  font-size: 1.5rem;
+  background-color: lightsalmon;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+#bottom-job-container4 #bottom-job-container4-description1 {
+  width: 40%;
+  height: 100%;
+  text-align: left;
+  background-color: lightsalmon;
+  color: black;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
+#references-request-form {
+  padding-top: 0px;
+  margin-top: 0px;
+  background-color: lightgreen;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+  font-weight: bolder;
+}
+#references-request-form #references-request-form > * {
+  background-color: black;
+  color: lightsalmon;
+}
+#references-request-form #references-request-form-actual {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+  width: 70%;
+}
+#references-request-form #references-request-form-actual input {
+  width: 90%;
+  clear: both;
+}
+#references-request-form #references-request-form-actual #submakeshift12 {
+  width: 20%;
+  height: 100%;
+}
+#references-request-form #references-request-form-actual #references-request-form-actual-checkbox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+#references-request-form #references-request-form-actual #references-request-form-actual-text-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+#references-request-form #references-request-form-actual #references-request-form-actual-text-section p {
+  width: 90%;
+}
+#references-request-form #references-request-form-actual #references-request-form-actual-about-requestor {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 50%;
+  margin-bottom: 20px;
+}
+#references-request-form #references-request-form-actual #references-request-form-actual-about-requestor .trio {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: no-wrap;
+  justify-content: center;
+  align-content: flex-end;
+  align-items: flex-end;
+  text-align: right;
+  margin: 10px;
+}
+#references-request-form #references-request-form-actual #references-request-form-actual-about-requestor .trio p {
+  width: 100%;
+}
+#references-request-form #references-request-form-actual #references-request-form-actual-about-requestor .trio .trio input #tel {
+  width: 7;
+}
+#references-request-form #references-request-form-actual #textbutton {
+  width: 20%;
+}
+#references-request-form #references-request-form-actual #references-request-form-actual-text-area {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+#references-request-form #references-request-form-actual #references-request-form-actual-buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+#references-request-form #references-request-form-actual #references-request-form-actual-buttons button {
+  margin: 0 auto;
+  width: 40%;
+  height: 60px;
+  border-radius: 10px;
+  background-color: lightgray;
+  color: black;
+  font-weight: bolder;
+  font-size: 3rem;
 }
