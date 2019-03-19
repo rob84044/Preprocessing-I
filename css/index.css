@@ -485,9 +485,9 @@ img {
   width: 100%;
   text-align: center;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-direction: row;
-  align-content: center;
+  align-content: space-around;
   align-items: flex-start;
   flex-wrap: no-wrap;
   padding: 0px;
@@ -505,13 +505,13 @@ img {
   padding: 0px;
 }
 #who-i-am #title {
-  width: 25%;
-  font-size: 900%;
+  width: 19%;
+  font-size: 100%;
   padding: 0px;
-  margin: 0px;
+  margin: 0 auto;
 }
 #who-i-am #makeshift1 {
-  width: 25%;
+  width: 30%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -519,7 +519,7 @@ img {
   align-content: center;
   align-items: center;
   padding: 0px;
-  margin: 0px;
+  margin: 0 auto;
 }
 #who-i-am #makeshift1 .placeholder {
   display: flex;
@@ -530,19 +530,19 @@ img {
   align-items: center;
   width: 100%;
   padding: 0px;
-  margin: 0px;
+  margin: 0 auto;
 }
 #who-i-am #makeshift1 .placeholder p {
-  width: 30rem;
-  font-size: 2rem;
+  width: 250px;
+  font-size: 20px;
   padding: 0px;
-  margin: 0px;
+  margin: 0 auto;
 }
 #who-i-am #makeshift1 .placeholder h3 {
   font-size: 35px;
   width: 20rem;
   padding: 0px;
-  margin: 0px;
+  margin: 0 auto;
 }
 #who-i-am #makeshift1 #skills {
   width: 25%;
@@ -793,7 +793,7 @@ img {
 }
 #references-request-form #references-request-form > * {
   background-color: black;
-  color: lightsalmon;
+  color: ;
 }
 #references-request-form #references-request-form-actual {
   display: flex;
@@ -894,4 +894,55 @@ img {
   color: black;
   font-weight: bolder;
   font-size: 3rem;
+}
+.column-centered-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 500px) {
+  body {
+    background-color: lightsalmon;
+    width: 80%;
+  }
+  * {
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 20%;
+  }
+  * P {
+    width: 70%;
+  }
+  * h1,
+  * h2,
+  * h3,
+  * h4,
+  * h5,
+  * h6 {
+    width: 70%;
+  }
+  #title {
+    font-size: 100px;
+  }
+  #contact-info {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  #contact-info p {
+    width: 30%;
+  }
+  #contact-info p .fa-5x {
+    height: 100%;
+    width: 30px;
+  }
 }

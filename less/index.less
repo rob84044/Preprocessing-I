@@ -520,14 +520,14 @@ nav{
   }
   
 #who-i-am{
-  background-color: lightsalmon;
+  background-color: @salmon;
   color: black;
   width: 100%;
   text-align: center;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-direction: row;
-  align-content: center;
+  align-content: space-around;
   align-items: flex-start;
   flex-wrap: no-wrap;
   padding:0px;
@@ -544,13 +544,13 @@ nav{
     }
   }
   #title{
-    width: 25%;
-    font-size: 900%;
+    width: 19%;
+    font-size: 100%;
     padding:0px;
-    margin: 0px;
+    margin: 0 auto;
   }
   #makeshift1{
-    width: 25%;
+    width: 30%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -558,7 +558,7 @@ nav{
     align-content: center;
     align-items: center;
     padding:0px;
-    margin: 0px;
+    margin: 0 auto;
     .placeholder{
       display: flex;
       flex-direction: row;
@@ -568,18 +568,18 @@ nav{
       align-items: center;
       width:100%;
       padding:0px;
-      margin: 0px;
+      margin: 0 auto;
       p{
-        width: 30rem;
-        font-size: 2rem;
+        width: 250px;;
+        font-size: 20px;;
         padding:0px;
-        margin: 0px;
+        margin: 0 auto;
       }
       h3{
         font-size: 35px;
         width: 20rem;
         padding:0px;
-        margin: 0px;
+        margin: 0 auto;
       }
     }
     #skills{
@@ -608,7 +608,7 @@ nav{
   }
   td:hover{
     background-color: black;
-    color: lightsalmon;
+    color: @salmon;
   }
   a, a:hover, a:visited, a:active {
     text-decoration: none;
@@ -621,7 +621,7 @@ nav{
   }
   tr #rowspecial{
     background-color: black;
-    color: lightsalmon;
+    color: @salmon;
   }
 }
 .bottom-job-container-child{
@@ -650,7 +650,7 @@ nav{
     padding: 0 auto;
     margin: 0 auto;
     font-size: 1.5rem;
-    background-color: lightsalmon;
+    background-color: @salmon;
     color: black;
 
     display: flex;
@@ -667,7 +667,7 @@ nav{
     padding: 0 auto;
     margin: 0 auto;
     text-align: left;
-    background-color: lightsalmon;
+    background-color: @salmon;
     color: black;
   }
   #bottom-job-container-description2{
@@ -676,7 +676,7 @@ nav{
     padding: 0 auto;
     margin: 0 auto;
     text-align: left;
-    background-color: lightsalmon;
+    background-color: @salmon;
     color: black;
 
     display: flex;
@@ -711,7 +711,7 @@ nav{
     padding: 0 auto;
     margin: 0 auto;
     font-size: 1.5rem;
-    background-color: lightsalmon;
+    background-color: @salmon;
     color: black;
 
     display: flex;
@@ -728,14 +728,14 @@ nav{
     padding: 0 auto;
     margin: 0 auto;
     text-align: left;
-    background-color: lightsalmon;
+    background-color: @salmon;
     color: black;
   }
   #bottom-job-container2-description1{
     width: 30%;
     height: 100%;
     text-align: left;
-    background-color: lightsalmon;
+    background-color: @salmon;
     color: black;
 
     display: flex;
@@ -767,7 +767,7 @@ nav{
     width: 35%;
     height: 100%;
     font-size: 1.5rem;
-    background-color: lightsalmon;
+    background-color: @salmon;
     color: black;
 
     display: flex;
@@ -783,7 +783,7 @@ nav{
     width: 35%;
     height: 100%;
     text-align: left;
-    background-color: lightsalmon;
+    background-color: @salmon;
     color: black;
 
     display: flex;
@@ -816,14 +816,10 @@ nav{
     width: 40%;
     height: 100%;
     font-size: 1.5rem;
-    background-color: lightsalmon;
+    background-color: @salmon;
     color: black;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
+    //Mixin value
+    .column-centered-flex();
     margin: 0 auto;
 
     border: 1px solid black;
@@ -833,15 +829,11 @@ nav{
     width: 40%;
     height: 100%;
     text-align: left;
-    background-color: lightsalmon;
+    background-color: @salmon;
     color: black;
     margin: 0 auto;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
+    //mixin value
+    .column-centered-flex();
     border: 1px solid black;
   }
   padding: 0px;
@@ -863,7 +855,7 @@ nav{
   font-weight: bolder;
   #references-request-form > *{
     background-color: black;
-    color: lightsalmon;
+    color: ;
   }
   #references-request-form-actual{
   display: flex;
@@ -964,6 +956,55 @@ nav{
         color:  black;
         font-weight: bolder;
         font-size: 3rem;
+      }
+    }
+  }
+}
+//Variables
+
+@salmon: lightsalmon;
+
+//Mixins
+.column-centered-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+//Media Querry
+@media only screen and (max-width: 500px) {
+  body {
+    background-color: @salmon;
+    width: 80%;
+  }
+  * {
+    font-size: .8rem;
+    .column-centered-flex;
+    P{
+      width: 70%;
+    }
+    h1, h2, h3, h4, h5, h6{
+      width: 70%;
+    }
+    width: 20%;
+  }
+  #title{
+    font-size: 100px;
+  }
+  #contact-info{
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    p{
+      width: 30%;
+      .fa-5x{
+        height: 100%;
+        width: 30px;
       }
     }
   }
