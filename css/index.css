@@ -319,39 +319,7 @@ html {
   align-items: center;
   background-color: black;
 }
-header {
-  padding: 0px;
-  margin: 0px;
-  border: 1px solid black;
-  background-color: darkseagreen;
-  text-align: center;
-  color: lightcoral;
-  font-weight: bolder;
-  -webkit-text-stroke: 0.5px black;
-  text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-}
-header h1 .download-file-as-pdf-text {
-  text-align: center;
-  background-color: white;
-}
-header button {
-  border-radius: 100px;
-  background-color: lightcoral;
-  border: 1px double black;
-  margin-left: 5px;
-}
-header a,
-header a:hover,
-header a:visited,
-header a:active {
-  text-decoration: none;
-  cursor: pointer;
-}
-#toppdf {
-  margin-top: 50px;
-  padding-top: 20px;
-}
-nav {
+#container nav {
   display: flex;
   justify-content: space-around;
   flex-direction: row;
@@ -367,18 +335,18 @@ nav {
   left: 0;
   height: 50px;
 }
-nav a,
-nav a:hover,
-nav a:visited,
-nav a:active {
+#container nav a,
+#container nav a:hover,
+#container nav a:visited,
+#container nav a:active {
   text-decoration: none;
   color: lightgreen;
 }
-.topaboutme {
+#container .topaboutme {
   margin-top: 35px;
   padding-top: 20px;
 }
-#aboutme {
+#container #aboutme {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -387,99 +355,97 @@ nav a:active {
   align-content: center;
   align-items: center;
 }
-#contact-info {
+#container #aboutme #contact-info {
   height: 100px;
   width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: sapce-betwen;
+  justify-content: space-between;
   align-content: center;
   align-items: center;
   background-color: lightgray;
   padding: 0px;
   margin: 0px;
   vertical-align: middle;
+  border-radius: 20px;
 }
-p {
+#container #aboutme #contact-info p {
   padding: 0px;
   margin: 0px;
   vertical-align: middle;
   width: 9%;
   text-align: center;
 }
-img {
-  border-radius: 20px;
-}
-img a,
-img a:hover,
-img a:visited,
-img a:active {
-  color: black;
-}
-#number a,
-#number a:hover,
-#number a:visited,
-#number a:active {
-  color: black;
-}
-#email a,
-#email a:hover,
-#email a:visited,
-#email a:active {
-  color: brown;
-}
-#facebook-top a,
-#facebook-top a:hover,
-#facebook-top a:visited,
-#facebook-top a:active {
-  color: #3b5998;
-}
-#twitter-top a,
-#twitter-top a:hover,
-#twitter-top a:visited,
-#twitter-top a:active {
-  color: #00aced;
-}
-#github-top a,
-#github-top a:hover,
-#github-top a:visited,
-#github-top a:active {
-  color: #222222;
-}
-#linkedin-top a,
-#linkedin-top a:hover,
-#linkedin-top a:visited,
-#linkedin-top a:active {
-  color: #007bb6;
-}
-#facebook-messeneger-top a,
-#facebook-messeneger-top a:hover,
-#facebook-messeneger-top a:visited,
-#facebook-messeneger-top a:active {
-  color: #3b5998;
-}
-#youtube-top a,
-#youtube-top a:hover,
-#youtube-top a:visited,
-#youtube-top a:active {
-  color: #cc181e;
-}
-#instagram-top a,
-#instagram-top a:hover,
-#instagram-top a:visited,
-#instagram-top a:active {
-  color: #517fa4;
-}
-#fullname {
-  font-size: 3.9rem;
-}
-img {
+#container #aboutme #contact-info p img {
   padding-top: 7px;
   width: 39%;
   height: 100%;
 }
-#who-i-am {
+#container #aboutme #contact-info p img a,
+#container #aboutme #contact-info p img a:hover,
+#container #aboutme #contact-info p img a:visited,
+#container #aboutme #contact-info p img a:active {
+  color: black;
+}
+#container #aboutme #contact-info p #number a,
+#container #aboutme #contact-info p #number a:hover,
+#container #aboutme #contact-info p #number a:visited,
+#container #aboutme #contact-info p #number a:active {
+  color: black;
+}
+#container #aboutme #contact-info p #email a,
+#container #aboutme #contact-info p #email a:hover,
+#container #aboutme #contact-info p #email a:visited,
+#container #aboutme #contact-info p #email a:active {
+  color: brown;
+}
+#container #aboutme #contact-info p #facebook-top a,
+#container #aboutme #contact-info p #facebook-top a:hover,
+#container #aboutme #contact-info p #facebook-top a:visited,
+#container #aboutme #contact-info p #facebook-top a:active {
+  color: #3b5998;
+}
+#container #aboutme #contact-info p #twitter-top a,
+#container #aboutme #contact-info p #twitter-top a:hover,
+#container #aboutme #contact-info p #twitter-top a:visited,
+#container #aboutme #contact-info p #twitter-top a:active {
+  color: #00aced;
+}
+#container #aboutme #contact-info p #github-top a,
+#container #aboutme #contact-info p #github-top a:hover,
+#container #aboutme #contact-info p #github-top a:visited,
+#container #aboutme #contact-info p #github-top a:active {
+  color: #222222;
+}
+#container #aboutme #contact-info p #linkedin-top a,
+#container #aboutme #contact-info p #linkedin-top a:hover,
+#container #aboutme #contact-info p #linkedin-top a:visited,
+#container #aboutme #contact-info p #linkedin-top a:active {
+  color: #007bb6;
+}
+#container #aboutme #contact-info p #facebook-messeneger-top a,
+#container #aboutme #contact-info p #facebook-messeneger-top a:hover,
+#container #aboutme #contact-info p #facebook-messeneger-top a:visited,
+#container #aboutme #contact-info p #facebook-messeneger-top a:active {
+  color: #3b5998;
+}
+#container #aboutme #contact-info p #youtube-top a,
+#container #aboutme #contact-info p #youtube-top a:hover,
+#container #aboutme #contact-info p #youtube-top a:visited,
+#container #aboutme #contact-info p #youtube-top a:active {
+  color: #cc181e;
+}
+#container #aboutme #contact-info p #instagram-top a,
+#container #aboutme #contact-info p #instagram-top a:hover,
+#container #aboutme #contact-info p #instagram-top a:visited,
+#container #aboutme #contact-info p #instagram-top a:active {
+  color: #517fa4;
+}
+#container #aboutme #contact-info p #fullname {
+  font-size: 3.9rem;
+}
+#container #aboutme #who-i-am {
   background-color: lightsalmon;
   color: black;
   width: 100%;
@@ -494,23 +460,23 @@ img {
   margin: 0px;
   border: 1px solid black;
 }
-#who-i-am #imageholder {
+#container #aboutme #who-i-am #imageholder {
   width: 25%;
   padding: 0px;
   margin: 0px;
 }
-#who-i-am #imageholder img {
+#container #aboutme #who-i-am #imageholder img {
   height: 100%;
   width: 100%;
   padding: 0px;
 }
-#who-i-am #title {
+#container #aboutme #who-i-am #title {
   width: 25%;
   font-size: 900%;
   padding: 0px;
   margin: 0px;
 }
-#who-i-am #makeshift1 {
+#container #aboutme #who-i-am #makeshift1 {
   width: 25%;
   display: flex;
   flex-direction: row;
@@ -521,7 +487,7 @@ img {
   padding: 0px;
   margin: 0px;
 }
-#who-i-am #makeshift1 .placeholder {
+#container #aboutme #who-i-am #makeshift1 .placeholder {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -532,61 +498,61 @@ img {
   padding: 0px;
   margin: 0px;
 }
-#who-i-am #makeshift1 .placeholder p {
-  width: 30rem;
-  font-size: 2rem;
-  padding: 0px;
-  margin: 0px;
-}
-#who-i-am #makeshift1 .placeholder h3 {
+#container #aboutme #who-i-am #makeshift1 .placeholder h3 {
   font-size: 35px;
   width: 20rem;
   padding: 0px;
   margin: 0px;
 }
-#who-i-am #makeshift1 #skills {
+#container #aboutme #who-i-am #makeshift1 .placeholder p {
+  width: 30rem;
+  font-size: 2rem;
+  padding: 0px;
+  margin: 0px;
+}
+#container #aboutme #who-i-am #skills {
   width: 25%;
 }
-#who-i-am #imageholder,
-#who-i-am #title,
-#who-i-am #makeshift1,
-#who-i-am #skills {
-  padding: 100px 0px;
-}
-#skillstable table,
-#skillstable th,
-#skillstable td {
+#container #aboutme #who-i-am #skills #skillstable table,
+#container #aboutme #who-i-am #skills #skillstable th,
+#container #aboutme #who-i-am #skills #skillstable td {
   border: 1px solid black;
   border-collapse: collapse;
 }
-#skillstable th,
-#skillstable td {
+#container #aboutme #who-i-am #skills #skillstable th,
+#container #aboutme #who-i-am #skills #skillstable td {
   padding: 15px;
 }
-#skillstable th {
+#container #aboutme #who-i-am #skills #skillstable th {
   text-align: left;
 }
-#skillstable td:hover {
+#container #aboutme #who-i-am #skills #skillstable td:hover {
   background-color: black;
   color: lightsalmon;
 }
-#skillstable a,
-#skillstable a:hover,
-#skillstable a:visited,
-#skillstable a:active {
+#container #aboutme #who-i-am #skills #skillstable a,
+#container #aboutme #who-i-am #skills #skillstable a:hover,
+#container #aboutme #who-i-am #skills #skillstable a:visited,
+#container #aboutme #who-i-am #skills #skillstable a:active {
   text-decoration: none;
   color: black;
 }
-#skillstable .change td:hover {
+#container #aboutme #who-i-am #skills #skillstable .change td:hover {
   color: black;
   text-decoration: underline;
   background-color: white;
 }
-#skillstable tr #rowspecial {
+#container #aboutme #who-i-am #skills #skillstable tr #rowspecial {
   background-color: black;
   color: lightsalmon;
 }
-.bottom-job-container-child {
+#container #aboutme #who-i-am #imageholder,
+#container #aboutme #who-i-am #title,
+#container #aboutme #who-i-am #makeshift1,
+#container #aboutme #who-i-am #skills {
+  padding: 100px 0px;
+}
+#container .bottom-job-container-child {
   background-color: white;
 }
 #bottom-job-container {
