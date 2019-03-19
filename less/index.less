@@ -855,7 +855,7 @@ nav{
   font-weight: bolder;
   #references-request-form > *{
     background-color: black;
-    color: ;
+    color: lightgreen;
   }
   #references-request-form-actual{
   display: flex;
@@ -975,37 +975,9 @@ nav{
 
 //Media Querry
 @media only screen and (max-width: 500px) {
-  body {
+  * {
     background-color: @salmon;
     width: 80%;
   }
-  * {
-    font-size: .8rem;
-    .column-centered-flex;
-    P{
-      width: 70%;
-    }
-    h1, h2, h3, h4, h5, h6{
-      width: 70%;
-    }
-    width: 20%;
-  }
-  #title{
-    font-size: 100px;
-  }
-  #contact-info{
-    flex-direction: row;
-    flex-wrap:wrap;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    width: 100%;
-    p{
-      width: 30%;
-      .fa-5x{
-        height: 100%;
-        width: 30px;
-      }
-    }
-  }
+  
 }
