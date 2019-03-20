@@ -793,7 +793,7 @@ img {
 }
 #references-request-form #references-request-form > * {
   background-color: black;
-  color: ;
+  color: lightgreen;
 }
 #references-request-form #references-request-form-actual {
   display: flex;
@@ -903,46 +903,8 @@ img {
   align-items: center;
 }
 @media only screen and (max-width: 500px) {
-  body {
+  * {
     background-color: lightsalmon;
     width: 80%;
-  }
-  * {
-    font-size: 0.8rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    width: 20%;
-  }
-  * P {
-    width: 70%;
-  }
-  * h1,
-  * h2,
-  * h3,
-  * h4,
-  * h5,
-  * h6 {
-    width: 70%;
-  }
-  #title {
-    font-size: 100px;
-  }
-  #contact-info {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    width: 100%;
-  }
-  #contact-info p {
-    width: 30%;
-  }
-  #contact-info p .fa-5x {
-    height: 100%;
-    width: 30px;
   }
 }
